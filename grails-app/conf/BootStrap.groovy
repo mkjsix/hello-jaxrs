@@ -1,9 +1,16 @@
 import hello.Person
 import com.gmongo.GMongo
+import org.bson.types.ObjectId
+import grails.converters.JSON
 
 class BootStrap {
 
     def init = { servletContext ->
+        
+        JSON.registerObjectMarshaller(ObjectId) {
+            it.toString()
+        }
+        
         environments {
             development {
                 // drop database
