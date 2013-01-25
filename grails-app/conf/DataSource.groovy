@@ -18,7 +18,7 @@ environments {
                 port = 27017
                 //username = "blah"
                 //password = "blah"
-                databaseName = "hello"
+                //databaseName = "foo"
             }
         }
         dataSource {

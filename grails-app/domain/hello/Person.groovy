@@ -1,9 +1,14 @@
 package hello
 
-class Person extends Mongoable {
+import org.bson.types.ObjectId
 
+class Person {
+
+    ObjectId id
     String firstName
     String lastName
+    
+    static mapWith = "mongo"
     
     static constraints = {
     }
