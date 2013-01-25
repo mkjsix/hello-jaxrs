@@ -1,7 +1,10 @@
 package hello
 
+import org.bson.types.ObjectId
+
 class Person {
 
+    ObjectId id
     String firstName
     String lastName
     
